@@ -2,3 +2,49 @@
     margin: 0;
     padding: 0;
 }
+center {
+    padding-left: calc(50%-600px);
+    padding-right: calc(50%-600px);
+}
+.top {
+    background-image: url(img/headerbcg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1024px;
+}
+.top__title {
+padding-top: 217px; 
+padding-left: 120px; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: #FFF;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.top__subtitle {
+color: #FFF;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 32px; 
+}
+.top__button {
+border-radius: 30px;
+background: #9C0332;
+color: #FFF;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.game__box {
+    border-color: #000915;
+    width: 1440px;
+    height: 556px;
+}
