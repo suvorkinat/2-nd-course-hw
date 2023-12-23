@@ -3,10 +3,10 @@ let a = 10;
 a = 20;
 alert (a);*/
 /* Задание 2
-let releaseYear =prompt('Год выпуска первого iPhone - 2007');
+const releaseYear ='Год выпуска первого iPhone - 2007';
 alert (releaseYear);*/
 /* Задание 3
-let userName = "Брендан Эйх";
+const userName = "Брендан Эйх";
 alert(userName);*/
 /* Задание 4
 let x = 10;
@@ -32,8 +32,8 @@ num += 5;
 num -= 3;
 num *= 7;
 num /= 3;
-num += 1;
-num -= 1;
+num ++;
+num --;
 alert(num);
 */
 /*Задание 8
@@ -43,8 +43,8 @@ alert(age);
 /*Задание 9.0*/
 const user = {
     name: "Tanya",
-    age: "24",
-    isAdmin: "true",
+    age: 24,
+    isAdmin: true,
 };
 //Задание 9.1
 user['cityofresidance']= 'Saint-Prtersburg';
