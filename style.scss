@@ -15,10 +15,10 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     height: 1024px;
+    padding-left: 120px;
 }
 .top__title {
 padding-top: 217px; 
-padding-left: 120px; 
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -36,7 +36,6 @@ font-style: normal;
 font-weight: 300;
 line-height: 32px; 
 margin-top: 32px;
-margin-left: 120px;
 }
 .top__button {
 border-radius: 30px;
@@ -50,40 +49,40 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 margin-top: 44px;
-margin-left: 120px;
 }
 .game__box {
     background: #000915;
     height: 556px;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .game__items {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
-    margin-left: 120px;
+    padding-left: 120px;
+    padding-bottom: 128px;
     padding-top: 128px;
 }
 .game__item {
-    color: #FFF;
-    font-size: 24px;
+color: #FFF;
+font-size: 24px;
 font-style: normal;
 font-weight: 600;
 line-height: 32px;
 flex-direction: column-reverse;
 display: flex;
 box-sizing: border-box;
-padding-left: 32px;
-padding-bottom: 32px;
 }
 .item1 {
-    background-image: url(img/game-1.png);
-    border-radius: 16px;
-    background-repeat: no-repeat;
-    width: 379px;
+background-image: url(img/game-1.png);
+border-radius: 16px;
+background-repeat: no-repeat;
+width: 379px;
 height: 300px;
-
 }
 .item2 {
 background-image: url(img/game-2.png);
