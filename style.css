@@ -140,17 +140,24 @@ a {
     border-radius: 30px;
     width: 234.063px;
     height: 48.603px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
   }
   .game__box {
     height: 1221px;
     background: #000915;
+  }
+  .game__items {
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 128px;
   }
-  .game__items {
-    width: 100%;
+  .game__item {
+    max-width: 343px;
   }
 }
 @media (max-width: 374px) {
@@ -160,5 +167,13 @@ a {
   }
   .game__items {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 128px;
+  }
+  .game__item {
+    max-width: 343px;
   }
 }/*# sourceMappingURL=style.css.map */
