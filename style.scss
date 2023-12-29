@@ -49,6 +49,11 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 margin-top: 44px;
+transition: 1s;
+&:hover {
+    cursor: pointer;
+    background: #EB443F;
+}
 }
 .game__box {
     background: #000915;
@@ -57,15 +62,14 @@ margin-top: 44px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 120px;
 }
 .game__items {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
-    padding-left: 120px;
-    padding-bottom: 128px;
-    padding-top: 128px;
+    
 }
 .game__item {
 color: #FFF;
@@ -76,6 +80,13 @@ line-height: 32px;
 flex-direction: column-reverse;
 display: flex;
 box-sizing: border-box;
+transition: 1s;
+&:hover {
+    cursor: url (img);
+    border-radius: 16px;
+    border: 3px solid #44D2FF;
+
+}
 }
 .item1 {
 background-image: url(img/game-1.png);
