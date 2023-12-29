@@ -58,7 +58,7 @@ a {
   transition: 1s;
 }
 .top__button:hover {
-  cursor: pointer;
+  cursor: url(img/clarity_cursor-hand-line.png), pointer;
   background: #EB443F;
 }
 
@@ -91,7 +91,7 @@ a {
   transition: 1s;
 }
 .game__item:hover {
-  cursor: url img;
+  cursor: url(img/clarity_cursor-hand-line.png), pointer;
   border-radius: 16px;
   border: 3px solid #44D2FF;
 }
