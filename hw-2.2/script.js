@@ -40,7 +40,7 @@ alert(num);
 let age = prompt('Сколько вам лет?')
 alert(age);
 */
-/*Задание 9.0*/
+/*Задание 9.0
 const user = {
     name: "Tanya",
     age: 24,
@@ -59,4 +59,4 @@ console.log(user[info]);
 alert(user);
 // Задание 10 
 let name = prompt ('Назовите свое имя');
-alert (`Hello, ${name}!`);
+alert (`Hello, ${name}!`);*/
