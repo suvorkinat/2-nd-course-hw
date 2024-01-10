@@ -34,9 +34,7 @@
 }
 .game__box {
     height: 1221px;
-    background: #000915;
-    
-
+    background: #000915; 
 }
 .game__items {
     width: 100%;
@@ -48,6 +46,30 @@
 }
 .game__item {
     max-width: 343px;
+}
+.game__one {
+    background: #000915;
+    height: 653.61px;
+}
+.game__one_block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.game__img {
+    max-width: 343px;
+    position: relative;
+    padding: 0px;
+
+}
+.game__title {
+    text-align: center;
+    font-size: 32px;
+}
+.game__subtitle {
+    text-align: center;
+    font-size: 14px;
 }
 }
 @media (max-width: 374px) {
