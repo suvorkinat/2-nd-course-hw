@@ -12,15 +12,16 @@ let result = low_Number(a,b);
 console.log(result);
 */
 /*Task 2
-const enterNumber = () => {
-  let userEnter = Number(prompt('Введите число'))
-  if (userEnter % 2 === 0) {
-    console.log('Число четное');
+let num = prompt("Введите число");
+function enterNumber(num) {
+  if (num % 2 === 0) {
+    return "Число четное";
   } else {
-    console.log('Число нечетное');
+    return "Число нечетное";
   }
 }
-enterNumber();
+let result = enterNumber(num);
+console.log(result);
 */
 /*Task 3.1
 const squareOutput = (a) => console.log(a ** 2);
@@ -41,21 +42,28 @@ function sayHi() {
 sayHi();
 */
 /*Task 5
-const checkNumb = (a, b) => {
-    return isNaN(a, b) ? `Одно или оба значения не являются числом` : a * b;
-    }
-    console.log(checkNumb(prompt(), prompt())); 
-*/
-/*Task 6
-function checkNumber() {
-  let input = prompt("Введите число");
-  if (isNaN(input)) {
-    return `Вы ввели неправильное значение`;
+let a = prompt("Введите первое число");
+let b = prompt("Введите второе число");
+function value(a, b) {
+  if (isNaN(a) || isNaN(b)) {
+    return 'Одно или оба значения не являются числом';
   } else {
-    return input * 3;
+    return a * b;
   }
 }
-checkNumber();
+let result = value (a, b);
+console.log(result);
+*/
+/*Task 6
+function cube(a) {
+  if (isNaN(a)) {
+    return `Вы ввели неправильное значение`;
+  } else {
+    return Math.pow(a, 3);
+  }
+}
+let a = 10;
+console.log(cube(a));
 */
 /*Task 7
 const circle1 = {

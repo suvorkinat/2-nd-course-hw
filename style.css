@@ -54,7 +54,6 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 44px;
   transition: 1s;
 }
 .top__button:hover {
@@ -70,6 +69,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   padding-left: 120px;
+  padding-top: 128px;
 }
 
 .game__items {
@@ -126,7 +126,6 @@ a {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 282px;
   padding-left: 120px;
 }
 .game__one_block {
@@ -150,6 +149,8 @@ a {
   font-weight: 300;
   line-height: 32px;
   font-size: 18px;
+  color: #FFF;
+  width: 584px;
 }
 
 .game__button {
@@ -228,7 +229,9 @@ a {
   }
   .game__one {
     background: #000915;
-    height: 653.61px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   .game__one_block {
     display: flex;
@@ -239,7 +242,8 @@ a {
   .game__img {
     max-width: 343px;
     position: relative;
-    padding: 0px;
+    padding-top: 64px;
+    padding-left: 0px;
   }
   .game__title {
     text-align: center;
@@ -247,7 +251,9 @@ a {
   }
   .game__subtitle {
     text-align: center;
+    line-height: 22px;
     font-size: 14px;
+    max-width: 343px;
   }
 }
 @media (max-width: 374px) {

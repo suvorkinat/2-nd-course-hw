@@ -49,7 +49,10 @@
 }
 .game__one {
     background: #000915;
-    height: 653.61px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
 }
 .game__one_block {
     display: flex;
@@ -60,8 +63,8 @@
 .game__img {
     max-width: 343px;
     position: relative;
-    padding: 0px;
-
+    padding-top: 64px;
+    padding-left: 0px;
 }
 .game__title {
     text-align: center;
@@ -69,7 +72,9 @@
 }
 .game__subtitle {
     text-align: center;
+    line-height: 22px;
     font-size: 14px;
+    max-width: 343px
 }
 }
 @media (max-width: 374px) {
