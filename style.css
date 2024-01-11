@@ -54,6 +54,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-top: 44px;
   transition: 1s;
 }
 .top__button:hover {
@@ -151,6 +152,7 @@ a {
   font-size: 18px;
   color: #FFF;
   width: 584px;
+  font-family: Montserrat;
 }
 
 .game__button {
@@ -164,7 +166,6 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 44px;
   transition: 1s;
 }
 .game__button:hover {
