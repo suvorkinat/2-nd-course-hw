@@ -76,7 +76,6 @@ console.log(index);
 const arr = [1, 3, 5, 10, 20]; 
 const str = arr.join(' ');
 console.log(str);
-*/
 //Task 4
 let arr04 = [];
 for (let i = 0; i < 3; i++) {
@@ -94,14 +93,14 @@ console.log(arr05);
 let arr06 = [9, 8, 7, "a", 6, 5];
 arr06.sort().pop();
 console.log(arr06);
-/*Task 7
+//Task 7
 const arr07 = [9, 8, 7, 6, 5];
 const guess = Number(prompt("Угадай число:"), 10);
 if (arr07.includes(guess)) {
   alert("Угадал!");
 } else {
   alert("Не угадал");
-}*/
+}
 //Task 8
 let string = "abcdef";
 console.log(string.split("").reverse().join(""));
@@ -147,3 +146,4 @@ for (let i = 0; i< 6; i++) {
 console.log(Arr15);
 const averege = (Arr15.reduce((a,b) => (a+b)))/(Arr15.length);
 console.log(averege.toFixed(2));
+*/
