@@ -75,6 +75,36 @@
     font-size: 14px;
     max-width: 343px;
 }
+.game__words {
+    background: #000915;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    &_img {
+        max-width: 343px;
+        position: relative;
+        padding-top: 64px;
+        padding-right: 0px;
+    }
+    &_block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+    &_title {
+    text-align: center;
+    font-size: 32px;
+    }
+    &_subtitle {
+        text-align: center;
+        line-height: 22px;
+        font-size: 14px;
+        max-width: 343px;
+    }
+}
+
 }
 @media (max-width: 374px) {
     .center {

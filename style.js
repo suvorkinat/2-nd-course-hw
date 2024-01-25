@@ -12,3 +12,19 @@ function date(number) {
     }
 }
 alert(date(number));
+//task 11, hw 2.7
+function gameFruits() {
+    let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    fruits = fruits.sort(() => Math.random() - 0.5);
+    alert(fruits);
+    let inputFirstword = prompt('Введите первое слово');
+    let inputLastWord = prompt('Введите последнее слово');
+    if (inputFirstword === fruits.indexOf[0] && inputLastWord === fruits.indexOf[6]) {
+        return alert('Поздравляю! Вы угадали!');
+    } else if (inputFirstword !== fruits.indexOf[0] && inputLastWord !== fruits.indexOf[6]) {
+        return alert('Вы не угадали')
+    }
+     else {
+        return alert('Вы были близки к победе!');
+    } 
+}

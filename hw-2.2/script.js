@@ -147,3 +147,88 @@ console.log(Arr15);
 const averege = (Arr15.reduce((a,b) => (a+b)))/(Arr15.length);
 console.log(averege.toFixed(2));
 */
+//Homework 2.7
+/*Task 1
+let str = 'js';
+let result = str.toUpperCase();
+console.log(result);*/
+//Task 2
+/*
+const animal = ["Кошка", "Кит", "Комар", "Носорог"];
+function str(arr, word) {
+  return arr
+    .map((element) => element.toLowerCase())
+    .filter((element) => element.startsWith(word));
+}
+console.log(str(animal, "ко"));
+//Task 3
+let number = 32.58884;
+let roundedDown = Math.floor(number);
+let roundedUp = Math.ceil(number);
+let roundedNearest = Math.round(number);
+console.log(roundedDown);
+console.log(roundedUp);
+console.log(roundedNearest);
+*/
+//Task 4
+/*
+let numbers = [52, 53, 49, 77, 21, 32];
+let minValue = Math.min(...numbers);
+let maxValue = Math.max(...numbers);
+console.log('Наименьшее число:', minValue);
+console.log('Наибольшее число:', maxValue);
+*/
+//Task 5
+/*
+function getRandomInt(minValue, maxValue) {
+  return Math.round(Math.random() * (maxValue - minValue)) + minValue;
+}
+console.log(getRandomInt(1, 10));
+*/
+//Task 6
+/*
+function getRandomNumber(maxValue) {
+  const getRandom = [];
+  for (let i = 0; i < Math.floor(maxValue / 2); i++) {
+    getRandom[i] = Math.floor(Math.random() * maxValue);
+  }
+  return getRandom;
+}
+console.log(getRandomNumber(7));
+//Task 7
+function getRandomInt(minValue, maxValue) {
+  return Math.round(Math.random() * (maxValue - minValue)) + minValue;
+}
+console.log(getRandomInt(20, 100));
+*/
+//Task
+/*
+let currentDate = new Date();
+console.log(currentDate);
+*/
+//Task 9
+/*
+let currentDate = new Date();
+let futureDate = new Date(currentDate.setDate(currentDate.getDate() + 73));
+console.log(futureDate);
+*/
+//Task 10
+
+const months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+const days = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
+const hours = ['часов', 'часа', 'час'];
+const minutes = ['минут', 'минуты', 'минута'];
+const seconds = ['секунд', 'секунда', 'секунды'];
+const currentDate = new Date();
+
+let fullDate = 'Дата:' + currentDate.getDate() + " " +
+months[currentDate.getMonth()] + " " +
+currentDate.getFullYear() + " " + 
+days[currentDate.getDay()];
+
+let fullTime = 'Время: ' +
+ hours[currentDate.getHours()] + " " + 
+ minutes[currentDate.getMinutes()] + " " + 
+ seconds[currentDate.getSeconds()];
+console.log(fullDate);
+console.log(fullTime);
