@@ -221,14 +221,8 @@ const minutes = ['минут', 'минуты', 'минута'];
 const seconds = ['секунд', 'секунда', 'секунды'];
 const currentDate = new Date();
 
-let fullDate = 'Дата:' + currentDate.getDate() + " " +
-months[currentDate.getMonth()] + " " +
-currentDate.getFullYear() + " " + 
-days[currentDate.getDay()];
-
-let fullTime = 'Время: ' +
- hours[currentDate.getHours()] + " " + 
- minutes[currentDate.getMinutes()] + " " + 
- seconds[currentDate.getSeconds()];
+let fullDate = `Дата: ${currentDate.getDate()} ${months[currentDate.getMonth()]} ${currentDate.getFullYear()} - это ${days[currentDate.getDay()]}`;
+let fullTime = `Время: ${currentDate.getHours()} : ${currentDate.getMinutes()} : ${currentDate.getSeconds()}`;
 console.log(fullDate);
 console.log(fullTime);
+
