@@ -19,9 +19,9 @@ function gameFruits() {
     alert(fruits);
     let inputFirstword = prompt('Введите первое слово');
     let inputLastWord = prompt('Введите последнее слово');
-    if (inputFirstword === fruits.indexOf[0] && inputLastWord === fruits.indexOf[6]) {
-        alert('Поздравляю! Вы угадали!');
-    } else if (inputFirstword !== fruits.indexOf[0] || inputLastWord !== fruits.indexOf[6]) {
+    if (inputFirstword === fruits[0] && inputLastWord === fruits[fruits.length-1]) {
+      alert('Поздравляю! Вы угадали!');
+    } else if (inputFirstword !== fruits[0] || inputLastWord !== fruits[fruits.length-1]) {
         alert('Вы были близки к победе!')
     }
      else {
