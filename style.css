@@ -279,6 +279,7 @@ a {
   }
   .game__img {
     max-width: 343px;
+    height: 236px;
     position: relative;
     padding-top: 64px;
     padding-left: 0px;
@@ -301,6 +302,8 @@ a {
   }
   .game__words_img {
     max-width: 343px;
+    width: 100%;
+    height: 236px;
     position: relative;
     padding-top: 64px;
     padding-right: 0px;

@@ -17,14 +17,19 @@ function gameFruits() {
     let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
     fruits = fruits.sort(() => Math.random() - 0.5);
     alert(fruits);
-    let inputFirstword = prompt('Введите первое слово');
+  
+    let inputFirstWord = prompt('Введите первое слово');
     let inputLastWord = prompt('Введите последнее слово');
-    if (inputFirstword === fruits[0] && inputLastWord === fruits[fruits.length-1]) {
+  
+    inputFirstWord = inputFirstWord.toLowerCase(); 
+    inputLastWord = inputLastWord.toLowerCase(); 
+  
+    if (inputFirstWord === fruits[0].toLowerCase() && inputLastWord === fruits[fruits.length - 1].toLowerCase()) {
       alert('Поздравляю! Вы угадали!');
-    } else if (inputFirstword !== fruits[0] || inputLastWord !== fruits[fruits.length-1]) {
-        alert('Вы были близки к победе!')
+    } else if (inputFirstWord === fruits[0].toLowerCase() || inputLastWord === fruits[fruits.length - 1].toLowerCase()) {
+      alert('Вы были близки к победе!');
+    } else {
+      alert('Вы не угадали!');
     }
-     else {
-        alert('Вы не угадали!');
-    } 
-}
+  }
+  gameFruits();
