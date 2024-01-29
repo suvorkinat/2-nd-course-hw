@@ -166,4 +166,41 @@ transition: 1s;
     position: relative;
     padding-left: 135px;
 }
+.game__words {
+    background: #000915;
+    height: 800px;  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding-left: 120px;
+    &_block {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    &_title {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 48px;
+    }
+    &_subtitle {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px; 
+    font-size: 18px;
+    color: #FFF;
+    width: 588px;
+    font-family: Montserrat;
+    }
+    &_img {
+        width: 481px;
+        height: 322px;
+        padding-right: 135px;
+    }
+    
+}
 @import 'mobile'
