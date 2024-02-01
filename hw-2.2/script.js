@@ -214,15 +214,118 @@ console.log(futureDate);
 */
 //Task 10
 
-const months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
-const days = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
-const hours = ['часов', 'часа', 'час'];
-const minutes = ['минут', 'минуты', 'минута'];
-const seconds = ['секунд', 'секунда', 'секунды'];
+const months = [
+  "января",
+  "февраля",
+  "марта",
+  "апреля",
+  "мая",
+  "июня",
+  "июля",
+  "августа",
+  "сентября",
+  "октября",
+  "ноября",
+  "декабря",
+];
+const days = [
+  "воскресенье",
+  "понедельник",
+  "вторник",
+  "среда",
+  "четверг",
+  "пятница",
+  "суббота",
+];
+const hours = ["часов", "часа", "час"];
+const minutes = ["минут", "минуты", "минута"];
+const seconds = ["секунд", "секунда", "секунды"];
 const currentDate = new Date();
 
-let fullDate = `Дата: ${currentDate.getDate()} ${months[currentDate.getMonth()]} ${currentDate.getFullYear()} - это ${days[currentDate.getDay()]}`;
+let fullDate = `Дата: ${currentDate.getDate()} ${
+  months[currentDate.getMonth()]
+} ${currentDate.getFullYear()} - это ${days[currentDate.getDay()]}`;
 let fullTime = `Время: ${currentDate.getHours()} : ${currentDate.getMinutes()} : ${currentDate.getSeconds()}`;
 console.log(fullDate);
 console.log(fullTime);
 
+//homework 2.8
+/*
+const people = [
+    { name: 'Глеб', age: 29 },
+    { name: 'Анна', age: 17 },
+    { name: 'Олег', age: 7 },
+    { name: 'Оксана', age: 47 }
+ ];
+people.sort(function(a, b) {
+    if (a.age > b.age) {
+        return 1;
+    }
+    if (a.age < b.age) {
+        return -1;
+    }
+    else {
+        return 0;
+    }
+});
+console.log(people);
+
+//Task 2 
+function isPositive(el) {
+    return el > 0;
+    }
+    function isMale(el) {
+    return el.gender === 'male';
+    }
+    function filter(arr, callback) {
+    const output = [];
+    arr.map(el => {
+        if(callback(el)) {
+            output.push(el)
+        }
+    });
+    return output;
+}
+    console.log(filter([3, -4, 1, 9], isPositive)); 
+    
+    const people = [
+       {name: 'Глеб', gender: 'male'},
+       {name: 'Анна', gender: 'female'},
+       {name: 'Олег', gender: 'male'},
+       {name: 'Оксана', gender: 'female'}
+    ];
+    
+    console.log(filter(people, isMale)); 
+
+//Task 3
+let TimerId = setInterval(() => console.log(new Date()), 3000);
+
+setTimeout(() => {
+  clearInterval(TimerId);
+
+  console.log("30 секунд прошло");
+}, 30000);
+
+//Task 4 
+function delayForSecond(callback) {
+    setTimeout(callback, 1000);
+}
+
+delayForSecond(function () {
+  console.log('Привет, Глеб!');
+})
+//Task 5
+function delayForSecond(cb) {
+  setTimeout(() => {
+    console.log("Прошла одна секунда");
+    if (cb) {
+      cb();
+    }
+  }, 1000);
+}
+function sayHi(name) {
+  console.log(`Привет, ${name}!`);
+}
+
+delayForSecond(() => sayHi("Глеб"));
+*/
